@@ -29,7 +29,7 @@ TotalCharges = st.number_input('Total Charges', min_value=0.0)
 # Bouton de prédiction
 if st.button('Predict Churn'):
     # Envoyer les données à l'API
-    response = requests.post("http://localhost:8000/predict", json={
+    response = requests.post("https://churn-predictor-solution-mini-projet-1.onrender.com/predict", json={
         "gender": gender,
         "SeniorCitizen": SeniorCitizen,
         "Partner": Partner,
